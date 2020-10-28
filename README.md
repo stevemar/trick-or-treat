@@ -1,6 +1,6 @@
 # Trick or Treat
 
-A fun little project
+A spooky little project - https://stevemar.github.io/trick-or-treat/
 
 ## License
 
