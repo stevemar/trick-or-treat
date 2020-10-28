@@ -37,23 +37,17 @@
     </div>
     <br>
     <div class="container-fluid" id="div_button">
-      <button class="btn btn-primary" type="button" onclick="change_trick()">Trick!</button>
-      <button class="btn btn-primary" type="button" onclick="change_treat()">Treat!</button>
+      <button class="btn btn-primary" type="button" onclick='change_image("monster")'>Trick!</button>
+      <button class="btn btn-primary" type="button" onclick='change_image("candy")'>Treat!</button>
     </div>
 
     <script>
-      function change_trick() {
-        number = Math.floor(Math.random() * 5) + 1;
-        var image_src = "images/monster" + number + ".png";
+      function change_image(file_prefix) {
+        numer = Math.floor(Math.random() * 6 ) + 1;
+        var image_src = "images/" + file_prefix + number + ".png";
         document.getElementById("image").src = image_src;
         document.getElementById("image").style.visibility = "visible";
-      }
-
-      function change_treat() {
-          number = Math.floor(Math.random() * 4) + 1;
-          var image_src = "images/candy" + number + ".png";
-          document.getElementById("image").src = image_src;
-          document.getElementById("image").style.visibility = "visible";
+        document.getElementById("image").style.height = "500px";
       }
     </script>
 
