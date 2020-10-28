@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trick or Treat</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+      .container-fluid {
+          text-align: center;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="https://github.com/stevemar/trick-or-treat">Trick or Treat!</a>
+          </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+      <h1 id="pictures_title">Trick or Treat Dev.to!</h1>
+      <div class="container-fluid">
+        <img id="image" style="visibility: hidden"/>
+      </div>
+
+    </div>
+    <br>
+    <div class="container-fluid" id="div_button">
+      <button class="btn btn-primary" type="button" onclick="change_trick()">Trick!</button>
+      <button class="btn btn-primary" type="button" onclick="change_treat()">Treat!</button>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
