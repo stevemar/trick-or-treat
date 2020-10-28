@@ -28,17 +28,26 @@
     </nav>
 
     <div class="container-fluid">
-
-      <h1 id="pictures_title">Trick or Treat Dev.to!</h1>
-      <div class="container-fluid">
-        <img id="image" style="visibility: hidden"/>
+      <div class="row">
+        <div class="jumbotron">
+          <h1>Trick or Treat Dev.to!</h1>
+          <p>Click on a button for a spooky surprise...</p>
+        </div>
       </div>
 
-    </div>
-    <br>
-    <div class="container-fluid" id="div_button">
-      <button class="btn btn-primary" type="button" onclick='change_image("monster")'>Trick!</button>
-      <button class="btn btn-primary" type="button" onclick='change_image("candy")'>Treat!</button>
+      <div class="row">
+        <div class="container-fluid">
+          <img id="image" style="visibility: hidden"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container-fluid" id="div_button">
+          <button class="btn btn-primary btn-lg" type="button" onclick='change_image("monster")'>Trick!</button>
+          <button class="btn btn-primary btn-lg" type="button" onclick='change_image("candy")'>Treat!</button>
+        </div>
+      </div>
+
     </div>
 
     <script>
