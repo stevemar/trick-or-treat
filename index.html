@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Trick or Treat</title>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -22,31 +24,38 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
           <div class="navbar-header">
-              <a class="navbar-brand" href="https://github.com/stevemar/trick-or-treat">Trick or Treat!</a>
+              <a class="navbar-brand" href="https://github.com/stevemar/trick-or-treat">GitHub Repo</a>
           </div>
       </div>
     </nav>
 
     <div class="container-fluid">
+
       <div class="row">
         <div class="jumbotron">
-          <h1>Trick or Treat Dev.to!</h1>
-          <p>Click on a button for a spooky surprise...</p>
+          <h1>Trick or Treat</h1>
+          <p>Click on a button for a spooky surprise 🎃 ...</p>
         </div>
       </div>
 
       <div class="row">
         <div class="container-fluid">
-          <img id="image" style="visibility: hidden"/>
+          <img id="image" style="padding: 10px; height: 500px; visibility: hidden"/>
         </div>
       </div>
 
       <div class="row">
         <div class="container-fluid" id="div_button">
-          <button class="btn btn-primary btn-lg" type="button" onclick='change_image("monster")'>Trick!</button>
+          <button class="btn btn-warning btn-lg" type="button" onclick='change_image("monster")'>Trick!</button>
           <button class="btn btn-primary btn-lg" type="button" onclick='change_image("candy")'>Treat!</button>
         </div>
       </div>
+
+      <hr>
+
+      <footer>
+        <a href="https://github.com/stevemar">Author: Steve Martinelli</a>
+      </footer>
 
     </div>
 
@@ -56,7 +65,6 @@
         var image_src = "images/" + file_prefix + number + ".png";
         document.getElementById("image").src = image_src;
         document.getElementById("image").style.visibility = "visible";
-        document.getElementById("image").style.height = "500px";
       }
     </script>
 
