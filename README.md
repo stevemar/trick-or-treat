@@ -1,6 +1,12 @@
 # Trick or Treat
 
-A spooky little project - https://stevemar.github.io/trick-or-treat/
+A spooky little project that was made in an hour for my son. Check it out here: <https://stevemar.github.io/trick-or-treat> or in GIF form below.
+
+![animated gif of webpage](docs/trick.gif)
+
+## About the code
+
+It's just some HTML and Javascript. Nothing fancy as I wanted it to be served on GitHub Pages. Click on a button to set the image source and visibility. [Bootstrap](https://getbootstrap.com/) was used so I could just pull in a decent looking theme easily.
 
 ## License
 
